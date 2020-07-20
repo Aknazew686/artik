@@ -1,0 +1,29 @@
+.fieldtext__input {
+  font-family: @font-main;
+  width: 288px;
+  padding: 0;
+  margin: 0;
+  padding: 13px 0 9px 15px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  border: none;
+  border-radius: 0;
+}
+
+.fieldtext__input::placeholder {
+  color: @color-warning;
+}
+
+@media (max-width: @desktop-width) {
+  .fieldtext__input {
+    padding-bottom: 9px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .fieldtext__input {
+    width: 215px;
+  }
+}

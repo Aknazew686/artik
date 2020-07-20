@@ -1,0 +1,118 @@
+.reservation {
+  background-image: url(../img/reservation-bg-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+
+.reservation__heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 9px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: @color-warning;
+}
+
+.reservation__text {
+  padding: 0;
+  margin: 0;
+  width: 352px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: @color-warning;
+}
+
+.reservation__wrapper {
+  padding-top: 164px;
+  padding-left: 60px;
+}
+
+.reservation__flex {
+  display: flex;
+  width: 1100px;
+  justify-content: space-between;
+}
+
+.reservation__carryover {
+  display: none;
+}
+
+@media (max-width: 1365px) {
+  .reservation__flex {
+    width: 100%;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .reservation {
+    background-image: url(../img/reservation-bg-tablet.jpg);
+    padding-top: 88px;
+    padding-bottom: 99px;
+  }
+
+  .reservation__wrapper {
+    padding: 0;
+  }
+
+  .reservation__heading {
+    text-align: center;
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 5px;
+  }
+
+  .reservation__flex {
+    display: block;
+    width: auto;
+  }
+
+  .reservation__text {
+    width: 378px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 54px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .reservation {
+    background-image: url(../img/reservation-bg-mobile.jpg);
+    padding: 61px 0;
+    padding-bottom: 63px;
+  }
+
+  .reservation__heading {
+    width: 200px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 14px;
+  }
+
+  .reservation__carryover {
+    display: block;
+  }
+
+  .reservation__text {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 262px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .reservation__carryover--mobile {
+    display: none;
+  }
+
+  .reservation__carryover-month {
+    display: none;
+  }
+
+  .reservation__text {
+    margin-bottom: 34px;
+  }
+}

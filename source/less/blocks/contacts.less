@@ -1,0 +1,155 @@
+.contacts {
+  padding-top: 120px;
+  padding-bottom: 113px;
+}
+
+.contacts__info {
+  width: 500px;
+}
+
+.contacts__text {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 33px;
+  padding-top: 74px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: @color-warning;
+}
+
+.contacts__adress {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 28px;
+  padding-bottom: 21px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: @color-warning;
+}
+
+.contacts__adress::after {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 22px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/pin.svg);
+  transform: translate(-50% -50%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.contacts__number {
+  position: relative;
+  padding-left: 28px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: @color-warning;
+}
+
+.contacts__number::after {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/phone.svg);
+  transform: translate(-50% -50%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.contacts__flex {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+}
+
+.contacts__carryover--tablet {
+  display: none;
+}
+
+@media (max-width: 1365px) {
+  .contacts__flex {
+    width: 100%;
+  }
+
+  .contacts__info {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 96px;
+  }
+
+  .contacts__carryover {
+    display: none;
+  }
+
+  .contacts__carryover--tablet {
+    display: block;
+  }
+
+  .contacts__info {
+    margin-left: 30px;
+  }
+
+  .contacts__flex {
+    width: auto;
+  }
+
+  .contacts__text {
+    padding-top: 66px;
+    padding-bottom: 29px;
+  }
+
+  .contacts__carryover--mobile {
+    display: block;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .contacts__wrapper {
+    order: 2;
+  }
+
+  .contacts__flex {
+    flex-wrap: wrap;
+  }
+
+  .contacts {
+   padding-top: 60px;
+   padding-bottom: 54px;
+  }
+
+  .contacts__text {
+    width: 286px;
+    padding-top: 0;
+    padding-bottom: 28px;
+  }
+
+  .contacts__carryover--tablet {
+    display: none;
+  }
+
+  .contacts__info {
+    margin-left: 0;
+  }
+
+  .contacts__carryover--mobile {
+    display: block;
+  }
+
+  .contacts__adress::after {
+    top: 2px;
+  }
+}

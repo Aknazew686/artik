@@ -1,0 +1,85 @@
+.cruises {
+  padding-top: 111px;
+}
+
+.cruises__heading {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 48px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  color: @color-warning;
+}
+
+.cruises__list {
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+  padding-bottom: 89px;
+  list-style: none;
+  display: flex;
+  width: 1130px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cruises__item {
+  position: relative;
+  margin-bottom: 30px;
+  margin-right: 0;
+}
+
+.cruises__item:hover .specification {
+  display: block;
+}
+
+@media (max-width: 1365px) {
+  .cruises__list {
+    width: 100%;
+  }
+
+  .cruises__item {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .cruises__list {
+    width: 648px;
+    padding-bottom: 70px;
+  }
+
+  .cruises {
+    padding-top: 91px;
+  }
+
+  .cruises__heading {
+    font-size: 26px;
+    line-height: 39px;
+    padding-bottom: 50px;
+  }
+
+  .cruises__item {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .cruises {
+    padding-top: 55px;
+  }
+
+  .cruises__heading {
+    padding-bottom: 29px;
+    font-size: 24px;
+  }
+
+  .cruises__list {
+    display: block;
+    margin-left: 9px;
+    width: 270px;
+    padding-bottom: 35px;
+  }
+}

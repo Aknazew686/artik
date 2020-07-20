@@ -1,0 +1,70 @@
+.info__image {
+  display: block;
+}
+
+.info {
+  position: relative;
+}
+
+.info::after {
+  position: absolute;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: @color-main;
+  top: 337px;
+  left: 30px;
+  transform: translate(-50% -50%);
+}
+
+.info--astoria::after {
+  content: "Круиз “Астория”";
+}
+
+.info--elaine::after {
+  content: "Круиз “Элайн”";
+}
+
+.info--atlantis::after {
+  content: "Круиз “Атлантис”";
+}
+
+.info--odysseus::after {
+  content: "Круиз “Одиссей”";
+}
+
+.info--olympia::after {
+  content: "Круиз “Олимпия”";
+}
+
+.info--aurora::after {
+  content: "Круиз “Аврора”";
+}
+
+.info--leonor::after {
+  content: "Круиз “Леонор”";
+}
+
+.info--minion::after {
+  content: "Круиз “Минион - 1”";
+}
+
+@media (max-width: @desktop-width) {
+  .info::after {
+    left: 35px;
+    top: 332px;
+  }
+
+  .info__image {
+    width: 309px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .info::after {
+    left: 26px;
+    top: 342px;
+  }
+}
+

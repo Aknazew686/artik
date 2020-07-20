@@ -1,0 +1,27 @@
+.toggle {
+  width: 24px;
+  height: 14px;
+  padding: 0;
+  margin-left: auto;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  outline: none;
+}
+
+.toggle--opened {
+  background-image: url("../img/menu-cross.svg");
+  width: 14px;
+  height: 14px;
+}
+
+.toggle--closed {
+  background-image: url("../img/menu-burger.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .toggle {
+    display: none;
+  }
+}
